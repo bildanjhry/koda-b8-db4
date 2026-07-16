@@ -1,6 +1,3 @@
--- DROP TABLE "users";
--- DROP TABLE "user_details";
-
 CREATE TABLE "users" (
     "id" INT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
     "email" VARCHAR(50) UNIQUE,
