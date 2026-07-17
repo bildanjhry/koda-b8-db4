@@ -8,9 +8,10 @@ CREATE TABLE "users" (
 CREATE TABLE "user_details" (
     "id_user" INT REFERENCES "users"("id"),
     "name" VARCHAR(40),
-    "email" VARCHAR(40) REFERENCES "users"("email"),
     "address" VARCHAR(255),
-    "status" INT DEFAULT 1
+    "status" INT DEFAULT 9,
+    "created_at" TIMESTAMP DEFAULT NOW(),
+    "upadated_at" TIMESTAMP DEFAULT NOW()
 );
 
 ----- REGISTER USER------
